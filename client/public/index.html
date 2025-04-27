@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descargar y Subir a Drive</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Descargar y Subir a Google Drive</h1>
+        
+        <div id="auth-section">
+            <button id="login-btn">Iniciar sesión con Google</button>
+            <div id="user-info" style="display: none;">
+                <p>Bienvenido, <span id="user-name"></span>!</p>
+                <button id="logout-btn">Cerrar sesión</button>
+            </div>
+        </div>
+        
+        <div id="upload-section" style="display: none;">
+            <h2>Descargar y Subir Archivo</h2>
+            <input type="text" id="download-url" placeholder="Ingresa la URL del archivo a descargar">
+            <input type="text" id="file-name" placeholder="Nombre del archivo en Drive (opcional)">
+            <button id="download-upload-btn">Descargar y Subir a Drive</button>
+            
+            <div id="status" class="status"></div>
+            <div id="progress" class="status info"></div>
+        </div>
+    </div>
 
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="/app.js"></script>
+</body>
+              </html>
