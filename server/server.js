@@ -72,7 +72,7 @@ app.post('/api/upload-to-drive', async (req, res) => {
 
         // Subir a Google Drive
         const fileMetadata = {
-            name: fileName || path.basename(new URL(downloadUrl).pathname.split('/').pop() || 'archivo_descargado',
+            name: fileName || path.basename(new URL(downloadUrl).pathname).split('/').pop() || 'archivo_descargado',
             mimeType: response.headers['content-type'] || 'application/octet-stream'
         };
 
