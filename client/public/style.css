@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+button {
+    background-color: #4285F4;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+button:hover {
+    background-color: #3367D6;
+}
+
+#logout-btn {
+    background-color: #DB4437;
+}
+
+#logout-btn:hover {
+    background-color: #C1351D;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.status {
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.success {
+    background-color: #E6F4EA;
+    color: #0D652D;
+}
+
+.error {
+    background-color: #FCE8E6;
+    color: #D93025;
+}
+
+.info {
+    background-color: #E8F0FE;
+    color: #1967D2;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
